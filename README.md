@@ -13,8 +13,9 @@ GET [/namespace]/<resource>/<action>[?query-params]
 ```
 GET [/namespace]/<resource>/<action>/<Base64 URI Encoded sorted query params>
 ```
-
-Depending upon a caching layer, we might need to validate the `query params`.
+The base64 URI encoded value must be validated to make sure it was created
+using the sorted query params. Also we need to throw error if unknown query params
+are passed.
 
 ## Mutation
 ```

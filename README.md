@@ -1,11 +1,20 @@
 # Sane API
 Sane API is an obvious REST API standard.
 
+## Motivation
+
 ## Query
+### Non Cachable
 ```
-GET [/namespace]/<resource>/<action>[?query_params]
+GET [/namespace]/<resource>/<action>[?query-params]
 ```
-Depending upon a caching layer, we might need to validate the `query params` in every query APIs.
+
+### Cachable
+```
+GET [/namespace]/<resource>/<action>/<Base64 URI Encoded sorted query params>
+```
+
+Depending upon a caching layer, we might need to validate the `query params`.
 
 ## Mutation
 ```

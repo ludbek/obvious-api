@@ -55,6 +55,9 @@ POST /user/delete
 ```
 
 ## Sane API is a REST API
+
+|Rest API features.       | Support.           |
+|-------------------------|--------------------|
 | Client-Server Separation| :white_check_mark: |
 | Uniform Interface       | :white_check_mark: |
 | Stateless               | :white_check_mark: |

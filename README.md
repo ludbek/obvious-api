@@ -2,7 +2,7 @@
 `Obvious API` is an obvious `REST API standard`.
 
 ## Motivation
-While there is a single `REST API standard`, there are multiple implementations in the wild.  
+While there is a single [REST API standard](#rest-api), there are multiple implementations in the wild.  
 They are different from company to company and team to team.  
 The biggest variations can be seen in the design of the URLs and use of the HTTP methods.  
 Sadly they are complex, easily misunderstood and don't have any names.

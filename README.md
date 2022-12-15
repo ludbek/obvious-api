@@ -36,7 +36,7 @@ It is the name of a task that belongs to a resource.
 It should be a verb.  
 e.g. `/auth/user/activate`, `/auth/user/deactivate`. 
 
-#### Fundamental actions
+#### Fundamental actions for a resource
 They are named after the CRUD operations.
 
 ##### create

@@ -1,5 +1,5 @@
-# Sane API
-Sane API is an obvious REST API standard.
+# Obvious API
+Obvious API is an obvious REST API standard.
 
 ## Motivation
 

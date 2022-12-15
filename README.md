@@ -2,9 +2,12 @@
 Obvious API is an obvious REST API standard.
 
 ## Motivation
+While there is a single REST API standard, there are multiple ways of implementing
+it. The biggest variations can be seen in the design of the URLs and use of the 
+HTTP methods. Sadly there aren't any name for these variations. It is difficult to
+communicate in the team. Obvious API is an attempt to solve this problem.
 
 ## Query
-### Non Cachable
 ```
 GET [/namespace]/<resource>/<action>[?query-params]
 ```
@@ -12,17 +15,17 @@ If there are any unknown params or the query params are not sorted, the API shou
 
 ## Mutation
 ```
-POST [/namespace]/<resource>/<action>[<body>]
+POST [/namespace]/<resource>/<action> + [body]
 ```
   
 ## Namespace
-It is an optional path that helps to segregate the resources.  
-It usually is a service name and should be a noun.  
+It is an optional path that helps to segregate the services.  
+It is usually a service name and should be a noun.  
 e.g. `/auth`
 
 ## Resource
 It could be the name of a datastore like table or a pseudo resource to hold bunch of actions together.  
-It should be a noun.  
+It should be a singular noun.  
 e.g. `/auth/user`. 
 
 ## Action
@@ -35,23 +38,23 @@ They are named after the CRUD operations.
 
 #### create
 ```
-POST /user/create
+POST /user/create + body
 ```
 
-#### query (read)
+#### read
 ```
-GET /user/query?page=1&offset=0
-GET /user/query-one?id=1
+GET /user/read?page=1&offset=0
+GET /user/read-one?id=1
 ```
 
 #### update
 ```
-POST /user/update
+POST /user/update + body
 ```
 
 #### delete
 ```
-POST /user/delete
+POST /user/delete + body
 ```
 
 ## Sane API is a REST API

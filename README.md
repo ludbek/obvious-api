@@ -1,18 +1,19 @@
 # Obvious API
-Obvious API is an obvious REST API standard.
+`Obvious API` is an obvious `REST API standard`.
 
 ## Motivation
-While there is a single REST API standard, there are multiple implementations in the wild.  
+While there is a single `REST API standard`, there are multiple implementations in the wild.  
 They are different from company to company and team to team.  
 The biggest variations can be seen in the design of the URLs and use of the HTTP methods.  
-Sadly there aren't any name for these variations. It is difficult to communicate in the team.  
-Obvious API is an attempt to solve these problems.
+Sadly they are complex, easily misunderstood and don't have any names.
+It is difficult to communicate and get consensus in the team.  
+`Obvious API` is an attempt to solve these problems.
 
 ## Query
 ```
 GET [/namespace]/<resource>/<action>[?query-params]
 ```
-If there are any unknown params or the query params are not sorted, the API should return 400.
+If there are any unknown query parameters or they are not sorted, the API should return 400.
 
 ## Mutation
 ```

@@ -2,10 +2,11 @@
 Obvious API is an obvious REST API standard.
 
 ## Motivation
-While there is a single REST API standard, there are multiple ways of implementing
-it. The biggest variations can be seen in the design of the URLs and use of the 
-HTTP methods. Sadly there aren't any name for these variations. It is difficult to
-communicate in the team. Obvious API is an attempt to solve this problem.
+While there is a single REST API standard, there are multiple implementations in the wild.  
+They are different from company to company and team to team. 
+The biggest variations can be seen in the design of the URLs and use of the HTTP methods.  
+Sadly there aren't any name for these variations. It is difficult to communicate in the team.  
+Obvious API is an attempt to solve this problem.
 
 ## Query
 ```

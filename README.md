@@ -3,10 +3,10 @@ Obvious API is an obvious REST API standard.
 
 ## Motivation
 While there is a single REST API standard, there are multiple implementations in the wild.  
-They are different from company to company and team to team. 
+They are different from company to company and team to team.  
 The biggest variations can be seen in the design of the URLs and use of the HTTP methods.  
 Sadly there aren't any name for these variations. It is difficult to communicate in the team.  
-Obvious API is an attempt to solve this problem.
+Obvious API is an attempt to solve these problems.
 
 ## Query
 ```
@@ -58,7 +58,7 @@ POST /user/update + body
 POST /user/delete + body
 ```
 
-## Sane API is a REST API
+## Obvious API is a REST API
 
 |Rest API features.       | Support.           |
 |-------------------------|--------------------|

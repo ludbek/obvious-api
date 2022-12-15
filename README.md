@@ -8,14 +8,7 @@ Sane API is an obvious REST API standard.
 ```
 GET [/namespace]/<resource>/<action>[?query-params]
 ```
-
-### Cachable
-```
-GET [/namespace]/<resource>/<action>/<Base64 URI Encoded sorted query params>
-```
-The base64 URI encoded value must be validated to make sure it was created
-using the sorted query params. Also we need to throw error if unknown query params
-are passed.
+If there are any unknown params or the query params are not sorted, the API should return 400.
 
 ## Mutation
 ```
@@ -45,9 +38,10 @@ They are named after the CRUD operations.
 POST /user/create
 ```
 
-#### read
+#### query (read)
 ```
-GET /user/read
+GET /user/query?page=1&offset=0
+GET /user/query-one?id=1
 ```
 
 #### update
@@ -61,10 +55,8 @@ POST /user/delete
 ```
 
 ## Sane API is a REST API
-1. Client-Server Separation
-2. Uniform Interface
-- requests and responses must follow a common protocol
-3. Stateless
-4. Layered System
-5. Cacheable
-Client side cache
+1. Client-Server Separation :white_check_mark:
+2. Uniform Interface        :white_check_mark:
+3. Stateless                :white_check_mark:
+4. Layered System           :white_check_mark:
+5. Cacheable                :white_check_mark:

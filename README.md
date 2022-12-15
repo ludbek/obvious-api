@@ -68,3 +68,6 @@ POST /user/delete + body
 | Stateless               | :white_check_mark: |
 | Layered System          | :white_check_mark: |
 | Cacheable               | :white_check_mark: |
+
+## Rest API
+Check out (Architectural Styles and the Design of Network-based Software Architectures)[https://www.ics.uci.edu/~fielding/pubs/dissertation/fielding_dissertation_2up.pdf] Chapter 5 to know about REST API standard.

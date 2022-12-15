@@ -1,4 +1,4 @@
-> This is a work in progress. Feel free to open an issue, I would love to learn and improve this document.
+> This is a work in progress. Feel free to open an issue or a PR.
 
 # Obvious API
 `Obvious API` is an obvious `REST API standard`.

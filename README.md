@@ -16,7 +16,7 @@ It is difficult to communicate and get consensus in a team.
 ```
 GET [/namespace]/<resource>/<action>[?query-params]
 ```
-If there are any unknown query parameters or they are not sorted, the API should return 400.
+If there are any unknown query parameters or the known query parameters are not sorted in ascending order, the API should return 400.
 
 ### Mutation
 ```

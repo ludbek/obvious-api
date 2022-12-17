@@ -8,7 +8,7 @@ While there is a single [REST API standard](#rest-api), there are multiple imple
 They are different from company to company and team to team.  
 The biggest variations can be seen in the design of the URLs and use of the HTTP methods.  
 Sadly they are complex, easily misunderstood and don't have any names.
-It is difficult to communicate and get consensus in the team.  
+It is difficult to communicate and get consensus in a team.  
 `Obvious API` is an attempt to solve these problems.
 
 ## Standard
